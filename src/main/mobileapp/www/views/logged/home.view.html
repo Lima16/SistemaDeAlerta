@@ -1,16 +1,16 @@
-<ion-view class="pane">
+<style title="local">
+
+</style><ion-view class="pane">
   <ion-header-bar align-title="center" class="bar bar-positive" data-component="crn-ion-header-bar">
     <div class="buttons buttons-left header-item">
       <button class="button button-clear" menu-toggle="left" data-component="crn-button" xattr-type="button-clear"> <i class="icon ion-navicon"></i> </button>
     </div>
     <h1 class="title">{{'Home.view.Home' | translate }}</h1>
     <div class="buttons buttons-right header-item">
-      <button class="button button-clear" menu-toggle="right" data-component="crn-button" xattr-type="button-clear"> <i class="icon ion-navicon"></i> </button>
+      
     </div>
   </ion-header-bar>
   <ion-content class="scroll-content has-header" data-component="crn-ion-content">
-    <div style="height: 60px;" data-component="crn-spacer" class="component-holder" id="crn-spacer-909305">
-      &nbsp;
-    </div>
-  </ion-content>
+    
+  <div class="component-holder ng-binding ng-scope" data-component="crn-google-maps" id="mapHome" ng-init="cronapi.client('js.blockly.APIGoogleMaps.Executar').run()" ng-click="cronapi.client('js.blockly.APIGoogleMaps.poligonal').run()"><div id="map1248" token="AIzaSyABYZ8X-Z2q5Bw5NC9rygAN2IvPFsHhFK4" style="height: 400px;" class=""></div></div><button class="button button-block component-holder button-assertive" type="submit" xattr-fullsize="button-block" xattr-theme="button-assertive" ng-click="cronapi.screen.changeView('#/app/logged/registros', [])" data-component="crn-button" id="crn-button-671282"><i class="ion ion-alert-circled"></i> <span>Criar Alerta</span></button><button class="button button-block button-positive component-holder style4269" type="submit" xattr-fullsize="button-block" xattr-theme="button-positive" ng-click="" data-component="crn-button" id="crn-button-367993"><i class="ion ion-android-alert"></i> <span>Denunciar</span></button></ion-content>
 </ion-view>
