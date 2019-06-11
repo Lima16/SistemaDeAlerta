@@ -46,7 +46,6 @@
       },
       "angle": 0,
       "isRest": true,
-      "tableName": null,
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "id": "1df87f56-c5ba-47f5-8e68-82931f49b989",
       "z": 4,
@@ -447,7 +446,7 @@
         "appVersion:java.lang.String"
       ],
       "methods": [
-        "+ list(): List<Device>"
+        "+ list(): List\u003cDevice\u003e"
       ],
       "position": {
         "x": 86,
@@ -470,11 +469,8 @@
           "type": "select"
         }
       ],
-      "tableName": null,
-      "tableScheme": null,
       "isRest": "true",
       "multitenantContext": "",
-      "restSecurity": null,
       "restPath": "",
       "id": "d92238a3-a37d-4cc6-a543-d0687dc207cd",
       "fields": [
@@ -677,7 +673,354 @@
         ".uml-class-methods-text": {
           "fill": "#0066FF",
           "font-size": 11,
-          "text": "+ list(): List<Device>"
+          "text": "+ list(): List\u003cDevice\u003e"
+        }
+      }
+    },
+    {
+      "type": "uml.Class",
+      "name": "registros",
+      "attributes": [
+        "id:java.lang.String",
+        "titulo:java.lang.String",
+        "comentario:java.lang.String",
+        "imagem:Image Upload (to Dropbox)",
+        "grau:grau"
+      ],
+      "methods": [],
+      "position": {
+        "x": 520,
+        "y": 276
+      },
+      "size": {
+        "width": 240.40625,
+        "height": 140.3936004638672
+      },
+      "angle": 0,
+      "multitenantContextJsonIgnore": "false",
+      "multitenantContextIgnoreEntities": "",
+      "role": "Auto",
+      "queries": [],
+      "realName": "",
+      "generateView": "Auto",
+      "isRest": "true",
+      "multitenantContext": "",
+      "restPath": "",
+      "id": "131a6565-415d-47b5-95be-8005256b2b3a",
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false
+        },
+        {
+          "name": "titulo",
+          "type": "java.lang.String",
+          "dbName": "titulo",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Titulo",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false
+        },
+        {
+          "name": "comentario",
+          "type": "java.lang.String",
+          "dbName": "comentario",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Comentario",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false
+        },
+        {
+          "name": "imagem",
+          "type": "Image Upload (to Dropbox)",
+          "dbName": "imagem",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Imagem",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false
+        },
+        {
+          "name": "grau",
+          "type": "grau",
+          "dbName": "fk_grau",
+          "label": "",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "multitenantContext": "",
+          "pkType": "",
+          "isIgnore": false,
+          "isTransien": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false
+        }
+      ],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "z": 14,
+      "cloudStorage": {
+        "name": "Dropbox",
+        "accessToken": "3--Ip5uiVtAAAAAAAAAAC0C25lVSFLrV6_788GnMG00FspWAGiOHOSfHHESHHIzI",
+        "clearDatabaseRecord": false
+      },
+      "attrs": {
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-attrs-rect": {
+          "height": 130,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,180)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "text": "registros",
+          "font-weight": "bold"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "id\ntitulo\ncomentario\nimagem\ngrau\n"
+        },
+        ".uml-class-attrs-value": {
+          "ref-x": 89.40625,
+          "font-size": 11,
+          "text": "java.lang.String\njava.lang.String\njava.lang.String\nImage Upload (to Dropbox)\ngrau\n"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        }
+      }
+    },
+    {
+      "type": "uml.Class",
+      "name": "grau",
+      "attributes": [
+        "id:java.lang.String",
+        "grauPericulosidade:java.lang.String"
+      ],
+      "methods": [],
+      "position": {
+        "x": 554,
+        "y": 100
+      },
+      "size": {
+        "width": 221.96875,
+        "height": 107.86979293823242
+      },
+      "angle": 0,
+      "multitenantContextJsonIgnore": "false",
+      "multitenantContextIgnoreEntities": "",
+      "role": "Auto",
+      "queries": [],
+      "realName": "",
+      "generateView": "Auto",
+      "isRest": "true",
+      "multitenantContext": "",
+      "restPath": "",
+      "id": "b746cf05-9e1a-4ce8-9cea-e8ac9197a989",
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false
+        },
+        {
+          "name": "grauPericulosidade",
+          "type": "java.lang.String",
+          "dbName": "grauPericulosidade",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Grau Periculosidade",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false
+        }
+      ],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "z": 15,
+      "attrs": {
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-attrs-rect": {
+          "height": 70,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,120)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "text": "grau",
+          "font-weight": "bold"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "id\ngrauPericulosidade\n"
+        },
+        ".uml-class-attrs-value": {
+          "ref-x": 128.15625,
+          "font-size": 11,
+          "text": "java.lang.String\njava.lang.String\n"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        }
+      }
+    },
+    {
+      "type": "uml.Composition",
+      "relationFields": [
+        "grau:target"
+      ],
+      "associationType": "Association",
+      "id": "7c9f57da-2215-44dc-a8f6-2ae8215ebf23",
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "target": {
+        "id": "131a6565-415d-47b5-95be-8005256b2b3a"
+      },
+      "source": {
+        "id": "b746cf05-9e1a-4ce8-9cea-e8ac9197a989"
+      },
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "z": 16,
+      "attrs": {
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        },
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
         }
       }
     }
@@ -696,7 +1039,9 @@
       "name": "",
       "id": "1d7f906f-a526-482d-aaf4-08d227ae8c18",
       "cells": [
+        "b746cf05-9e1a-4ce8-9cea-e8ac9197a989",
         "d2e50f97-0b9e-4037-94ba-af64568af247",
+        "131a6565-415d-47b5-95be-8005256b2b3a",
         "1df87f56-c5ba-47f5-8e68-82931f49b989",
         "d92238a3-a37d-4cc6-a543-d0687dc207cd"
       ]
